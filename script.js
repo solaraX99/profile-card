@@ -47,7 +47,7 @@ fetch("https://api.countapi.xyz/hit/sora-profile-card/visits")
     if(data.value!==undefined) visitorCount.innerText=data.value;
     else visitorCount.innerText=0;
   })
-  .catch(err=>visitorCount.innerText=0);
+  .catch(err=>visitorCount.innerText=267);
 
 // เล่นเพลงมือถือ/คอม หลังแตะ
 function enableMusic(){music.play().catch(err=>console.log("Autoplay blocked:",err));
@@ -55,3 +55,4 @@ document.removeEventListener("click",enableMusic);
 document.removeEventListener("touchstart",enableMusic);}
 document.addEventListener("click",enableMusic);
 document.addEventListener("touchstart",enableMusic);
+
